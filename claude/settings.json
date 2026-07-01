@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Write",
+      "Edit",
+      "MultiEdit",
+      "Grep",
+      "Glob",
+      "LS",
+      "Bash(pytest:*)",
+      "Bash(python:*)",
+      "Bash(npm:*)",
+      "Bash(pnpm:*)",
+      "Bash(uv:*)",
+      "Bash(grep:*)",
+      "Bash(ruff:*)"
+    ],
+    "deny": [
+      "Bash(curl *api.openai.com*)",
+      "Bash(curl *generativelanguage.googleapis.com*)",
+      "Bash(curl *api.groq.com*)",
+      "Bash(curl *api.anthropic.com*)",
+      "Bash(rm -rf /:*)"
+    ]
+  }
+}
